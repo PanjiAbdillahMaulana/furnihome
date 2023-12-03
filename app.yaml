@@ -1,9 +1,9 @@
 runtime: python39
 
 handlers:
-- url: /(.*\.(html|css|js|png|jpg|gif))$
+- url: /(.*\.(html|css|js|png|jpg|gif|webp|svg|ico))$
   static_files: \1
-  upload: (.*\.(html|css|js|png|jpg|gif))$
+  upload: (.*\.(html|css|js|png|jpg|gif|webp|svg|ico))$
 - url: /.*
   static_files: index.html
   upload: index.html
